@@ -24,8 +24,8 @@ def print_log(msg):
     old_stdout.write(msg + "\n")
     old_stdout.flush()
 
-def log_start(task):
-    print_log(f"[START] task={task} env=resume-matching-env model=gpt-4o-mini")
+def log_start(task, model):
+    print_log(f"[START] task={task} env=resume-matching-env model={model}")
 
 def log_step(step, action, reward, done, xai=None, error="null"):
     xai_str = json.dumps(xai).replace(' ', '') if xai else "null"
@@ -36,20 +36,19 @@ def log_end(success, steps, score, rewards):
     print_log(f"[END] success={str(success).lower()} steps={steps} score={score:.2f} rewards={rewards_str}")
 
 def run_inference():
-    api_key = os.getenv("HF_TOKEN")
-    if not api_key:
-        print_log("[ERROR] HF_TOKEN not found in environment.")
-        return
+    API_BASE_URL = os.getenv("API_BASE_URL", "https://router.huggingface.co/v1")
+    MODEL_NAME = os.getenv("MODEL_NAME", "openai/gpt-oss-120b:groq")
+    HF_TOKEN = os.getenv("HF_TOKEN")
 
     client = OpenAI(
-        base_url="https://router.huggingface.co/v1",
-        api_key=api_key,
+        base_url=API_BASE_URL,
+        api_key=HF_TOKEN,
     )
 
     tasks = ["easy", "medium", "hard"]
 
     for task_name in tasks:
-        log_start(task_name)
+        log_start(task_name, MODEL_NAME)
         env = ResumeEnv(task_type=task_name)
         obs = env.reset()
 
@@ -70,16 +69,19 @@ def run_inference():
             # 1. Analyze
             obs, r_obj, done, info = env.step(Action(action_type="analyze_job"))
             rewards.append(r_obj.score)
+            log_step(1, "analyze", r_obj.score, done)
             
             # 2. Shortlist
             primary_job_dict = obs.jobs[0].model_dump()
             shortlist_ids = get_top_k(primary_job_dict, all_resumes_dict, k=5)
             obs, r_obj, done, info = env.step(Action(action_type="shortlist", resumes=shortlist_ids))
             rewards.append(r_obj.score)
+            log_step(2, shortlist_ids, r_obj.score, done)
             
             # 3. Rank
             obs, r_obj, done, info = env.step(Action(action_type="rank"))
             rewards.append(r_obj.score)
+            log_step(3, "rank", r_obj.score, done)
 
             # -------------------------------------------------------------
             # 🧠 STEP 4: FINALIZE (Hybrid Matcher + LLM with Robust Fallback)
@@ -168,7 +170,7 @@ REQUIRED STRUCTURE:
             try:
                 # 🚀 ATTEMPT LLM CALL
                 res = client.chat.completions.create(
-                    model="openai/gpt-oss-120b:groq",
+                    model=MODEL_NAME,
                     messages=[
                         {"role": "system", "content": "You are a professional HR bot. You MUST return ONLY valid JSON. Focus on the candidates with high similarity scores."},
                         {"role": "user", "content": prompt}
@@ -236,9 +238,11 @@ REQUIRED STRUCTURE:
             done = True
 
         # FINAL LOGGING
-        total_score = sum(rewards)
-        log_step(1, processed_action, total_score, done, xai=xai_metadata, error=error_msg)
-        log_end(total_score > 0.4, 1, total_score, rewards)
+        total_score = min(1.0, sum(rewards))
+        log_step(4, processed_action, final_reward_val, done, xai=xai_metadata, error=error_msg)
+        
+        success = done and total_score > 0
+        log_end(success, 4, total_score, rewards)
 
 if __name__ == "__main__":
     run_inference()
