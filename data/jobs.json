@@ -1,0 +1,1652 @@
+[
+  {
+    "id": "j1",
+    "category": "Software Engineering",
+    "skills_required": [
+      "node.js",
+      "express",
+      "mongodb",
+      "restful api design"
+    ],
+    "description": "Seeking a Backend Engineer skilled in Node.js, Express, MongoDB, and RESTful API design."
+  },
+  {
+    "id": "j2",
+    "category": "Software Engineering",
+    "skills_required": [
+      "vue.js",
+      "typescript",
+      "tailwind css",
+      "responsive web design"
+    ],
+    "description": "Hiring a Frontend Developer experienced with Vue.js, TypeScript, Tailwind CSS, and responsive web design."
+  },
+  {
+    "id": "j3",
+    "category": "Software Engineering",
+    "skills_required": [
+      "react",
+      "python",
+      "django",
+      "postgresql",
+      "aws"
+    ],
+    "description": "Looking for a Full Stack Developer proficient in React, Python, Django, PostgreSQL, and AWS."
+  },
+  {
+    "id": "j4",
+    "category": "DevOps & Cloud",
+    "skills_required": [
+      "kubernetes",
+      "docker",
+      "jenkins",
+      "terraform",
+      "ci/cd pipelines"
+    ],
+    "description": "Seeking a DevOps Engineer with expertise in Kubernetes, Docker, Jenkins, Terraform, and CI/CD pipelines."
+  },
+  {
+    "id": "j5",
+    "category": "Mobile Development",
+    "skills_required": [
+      "swift",
+      "ios sdk",
+      "coredata",
+      "apple ui guidelines"
+    ],
+    "description": "Hiring a Mobile App Developer skilled in Swift, iOS SDK, CoreData, and Apple UI guidelines."
+  },
+  {
+    "id": "j6",
+    "category": "Mobile Development",
+    "skills_required": [
+      "kotlin",
+      "android studio",
+      "jetpack compose",
+      "rest apis"
+    ],
+    "description": "Looking for an Android Developer experienced in Kotlin, Android Studio, Jetpack Compose, and REST APIs."
+  },
+  {
+    "id": "j7",
+    "category": "Quality Assurance",
+    "skills_required": [
+      "selenium",
+      "cypress",
+      "java",
+      "automated testing frameworks"
+    ],
+    "description": "Searching for a QA Automation Engineer skilled in Selenium, Cypress, Java, and automated testing frameworks."
+  },
+  {
+    "id": "j8",
+    "category": "DevOps & Cloud",
+    "skills_required": [
+      "aws",
+      "azure",
+      "cloud migration strategies",
+      "serverless computing"
+    ],
+    "description": "Hiring a Cloud Architect with strong knowledge of AWS, Azure, cloud migration strategies, and serverless computing."
+  },
+  {
+    "id": "j9",
+    "category": "Database Administration",
+    "skills_required": [
+      "oracle",
+      "sql server",
+      "performance tuning",
+      "backup strategies"
+    ],
+    "description": "Seeking a Database Administrator proficient in Oracle, SQL Server, performance tuning, and backup strategies."
+  },
+  {
+    "id": "j10",
+    "category": "Cybersecurity",
+    "skills_required": [
+      "network security",
+      "threat intelligence",
+      "siem tools",
+      "incident response"
+    ],
+    "description": "Looking for a Cybersecurity Analyst experienced in network security, threat intelligence, SIEM tools, and incident response."
+  },
+  {
+    "id": "j11",
+    "category": "Data Engineering",
+    "skills_required": [
+      "apache spark",
+      "hadoop",
+      "python",
+      "etl processes",
+      "aws redshift"
+    ],
+    "description": "Hiring a Data Engineer skilled in Apache Spark, Hadoop, Python, ETL processes, and AWS Redshift."
+  },
+  {
+    "id": "j12",
+    "category": "Data Science & AI",
+    "skills_required": [
+      "pytorch",
+      "tensorflow",
+      "mlops",
+      "model deployment",
+      "computer vision"
+    ],
+    "description": "Seeking a Machine Learning Engineer proficient in PyTorch, TensorFlow, MLOps, model deployment, and computer vision."
+  },
+  {
+    "id": "j13",
+    "category": "Data Analytics",
+    "skills_required": [
+      "tableau",
+      "power bi",
+      "sql",
+      "data warehousing concepts"
+    ],
+    "description": "Looking for a Business Intelligence Analyst skilled in Tableau, Power BI, SQL, and data warehousing concepts."
+  },
+  {
+    "id": "j14",
+    "category": "Data Analytics",
+    "skills_required": [
+      "excel",
+      "sql",
+      "python",
+      "google analytics",
+      "executive dashboards"
+    ],
+    "description": "Hiring a Data Analyst experienced with Excel, SQL, Python, Google Analytics, and creating executive dashboards."
+  },
+  {
+    "id": "j15",
+    "category": "Data Science & AI",
+    "skills_required": [
+      "nlp",
+      "large language models",
+      "deep learning",
+      "algorithmic optimization"
+    ],
+    "description": "Searching for an AI Researcher knowledgeable in NLP, large language models, deep learning, and algorithmic optimization."
+  },
+  {
+    "id": "j16",
+    "category": "Product Management",
+    "skills_required": [
+      "agile methodologies",
+      "user research",
+      "roadmap planning",
+      "cross-functional leadership"
+    ],
+    "description": "Looking for a Product Manager skilled in Agile methodologies, user research, roadmap planning, and cross-functional leadership."
+  },
+  {
+    "id": "j17",
+    "category": "Project Management",
+    "skills_required": [
+      "scrum",
+      "jira",
+      "risk management",
+      "software delivery lifecycles"
+    ],
+    "description": "Seeking a Technical Project Manager experienced in Scrum, Jira, risk management, and software delivery lifecycles."
+  },
+  {
+    "id": "j18",
+    "category": "Project Management",
+    "skills_required": [
+      "agile ceremonies",
+      "removing blockers",
+      "coaching development teams"
+    ],
+    "description": "Hiring a Scrum Master proficient in facilitating agile ceremonies, removing blockers, and coaching development teams."
+  },
+  {
+    "id": "j19",
+    "category": "Design & UX",
+    "skills_required": [
+      "usability testing",
+      "user interviews",
+      "journey mapping",
+      "qualitative data analysis"
+    ],
+    "description": "Looking for a UX Researcher skilled in usability testing, user interviews, journey mapping, and qualitative data analysis."
+  },
+  {
+    "id": "j20",
+    "category": "Design & UX",
+    "skills_required": [
+      "figma",
+      "sketch",
+      "interactive prototyping",
+      "design systems"
+    ],
+    "description": "Seeking a UI Designer experienced in Figma, Sketch, interactive prototyping, and building comprehensive design systems."
+  },
+  {
+    "id": "j21",
+    "category": "Marketing",
+    "skills_required": [
+      "brand strategy",
+      "digital marketing",
+      "budget management",
+      "multi-channel campaigns"
+    ],
+    "description": "Hiring a Marketing Director skilled in brand strategy, digital marketing, budget management, and multi-channel campaigns."
+  },
+  {
+    "id": "j22",
+    "category": "Marketing",
+    "skills_required": [
+      "keyword research",
+      "technical seo audits",
+      "link building",
+      "google analytics"
+    ],
+    "description": "Looking for an SEO Specialist proficient in keyword research, technical SEO audits, link building, and Google Analytics."
+  },
+  {
+    "id": "j23",
+    "category": "Marketing",
+    "skills_required": [
+      "copywriting",
+      "editorial planning",
+      "wordpress",
+      "social media strategy"
+    ],
+    "description": "Searching for a Content Marketer experienced in copywriting, editorial planning, WordPress, and social media strategy."
+  },
+  {
+    "id": "j24",
+    "category": "Marketing",
+    "skills_required": [
+      "community building",
+      "hootsuite",
+      "engagement tracking",
+      "trend analysis"
+    ],
+    "description": "Seeking a Social Media Manager skilled in community building, Hootsuite, engagement tracking, and trend analysis."
+  },
+  {
+    "id": "j25",
+    "category": "Marketing",
+    "skills_required": [
+      "google ads",
+      "facebook business manager",
+      "ppc campaigns",
+      "a/b testing"
+    ],
+    "description": "Hiring a Paid Media Specialist knowledgeable in Google Ads, Facebook Business Manager, PPC campaigns, and A/B testing."
+  },
+  {
+    "id": "j26",
+    "category": "Sales",
+    "skills_required": [
+      "cold calling",
+      "lead generation",
+      "salesforce",
+      "email outreach"
+    ],
+    "description": "Looking for a Sales Development Representative skilled in cold calling, lead generation, Salesforce, and email outreach."
+  },
+  {
+    "id": "j27",
+    "category": "Sales",
+    "skills_required": [
+      "b2b sales",
+      "contract negotiation",
+      "pipeline management",
+      "closing deals"
+    ],
+    "description": "Seeking an Account Executive experienced in B2B sales, contract negotiation, pipeline management, and closing deals."
+  },
+  {
+    "id": "j28",
+    "category": "Customer Success",
+    "skills_required": [
+      "client onboarding",
+      "retention strategies",
+      "upselling",
+      "qbrs"
+    ],
+    "description": "Hiring a Customer Success Manager proficient in client onboarding, retention strategies, upselling, and conducting QBRs."
+  },
+  {
+    "id": "j29",
+    "category": "Sales",
+    "skills_required": [
+      "team leadership",
+      "sales forecasting",
+      "crm optimization",
+      "quota attainment"
+    ],
+    "description": "Searching for a Sales Manager skilled in team leadership, sales forecasting, CRM optimization, and quota attainment."
+  },
+  {
+    "id": "j30",
+    "category": "Sales",
+    "skills_required": [
+      "pre-sales",
+      "technical presentations",
+      "cloud architecture",
+      "client consulting"
+    ],
+    "description": "Looking for a Solutions Architect experienced in pre-sales, technical presentations, cloud architecture, and client consulting."
+  },
+  {
+    "id": "j31",
+    "category": "Human Resources",
+    "skills_required": [
+      "employee relations",
+      "onboarding",
+      "hris management",
+      "policy implementation"
+    ],
+    "description": "Seeking an HR Generalist skilled in employee relations, onboarding, HRIS management, and policy implementation."
+  },
+  {
+    "id": "j32",
+    "category": "Human Resources",
+    "skills_required": [
+      "sourcing software engineers",
+      "applicant tracking systems",
+      "interviewing"
+    ],
+    "description": "Hiring a Technical Recruiter experienced in sourcing software engineers, applicant tracking systems, and interviewing."
+  },
+  {
+    "id": "j33",
+    "category": "Human Resources",
+    "skills_required": [
+      "market analysis",
+      "payroll systems",
+      "benefits administration"
+    ],
+    "description": "Looking for a Compensation and Benefits Manager proficient in market analysis, payroll systems, and benefits administration."
+  },
+  {
+    "id": "j34",
+    "category": "Human Resources",
+    "skills_required": [
+      "instructional design",
+      "e-learning platforms",
+      "corporate training"
+    ],
+    "description": "Seeking a Training and Development Specialist skilled in instructional design, e-learning platforms, and corporate training."
+  },
+  {
+    "id": "j35",
+    "category": "Human Resources",
+    "skills_required": [
+      "employer branding",
+      "high-volume hiring",
+      "recruitment strategy"
+    ],
+    "description": "Searching for a Talent Acquisition Director experienced in employer branding, high-volume hiring, and recruitment strategy."
+  },
+  {
+    "id": "j36",
+    "category": "Finance",
+    "skills_required": [
+      "financial modeling",
+      "variance analysis",
+      "excel",
+      "corporate finance forecasting"
+    ],
+    "description": "Hiring a Financial Analyst skilled in financial modeling, variance analysis, Excel, and corporate finance forecasting."
+  },
+  {
+    "id": "j37",
+    "category": "Finance",
+    "skills_required": [
+      "month-end close",
+      "general ledger reconciliation",
+      "gaap",
+      "tax preparation"
+    ],
+    "description": "Looking for a Senior Accountant experienced in month-end close, general ledger reconciliation, GAAP, and tax preparation."
+  },
+  {
+    "id": "j38",
+    "category": "Finance",
+    "skills_required": [
+      "financial reporting",
+      "internal audits",
+      "budgeting",
+      "managing accounting teams"
+    ],
+    "description": "Seeking a Controller proficient in financial reporting, internal audits, budgeting, and managing accounting teams."
+  },
+  {
+    "id": "j39",
+    "category": "Finance",
+    "skills_required": [
+      "portfolio management",
+      "equity research",
+      "bloomberg terminal",
+      "valuation"
+    ],
+    "description": "Hiring an Investment Analyst knowledgeable in portfolio management, equity research, Bloomberg Terminal, and valuation."
+  },
+  {
+    "id": "j40",
+    "category": "Finance",
+    "skills_required": [
+      "adp",
+      "wage garnishments",
+      "timekeeping software",
+      "compliance reporting"
+    ],
+    "description": "Looking for a Payroll Administrator skilled in ADP, wage garnishments, timekeeping software, and compliance reporting."
+  },
+  {
+    "id": "j41",
+    "category": "Supply Chain & Logistics",
+    "skills_required": [
+      "logistics optimization",
+      "vendor negotiation",
+      "inventory control",
+      "sap"
+    ],
+    "description": "Seeking a Supply Chain Manager experienced in logistics optimization, vendor negotiation, inventory control, and SAP."
+  },
+  {
+    "id": "j42",
+    "category": "Operations",
+    "skills_required": [
+      "process improvement",
+      "team leadership",
+      "resource allocation",
+      "quality assurance"
+    ],
+    "description": "Hiring an Operations Manager proficient in process improvement, team leadership, resource allocation, and quality assurance."
+  },
+  {
+    "id": "j43",
+    "category": "Supply Chain & Logistics",
+    "skills_required": [
+      "freight routing",
+      "customs compliance",
+      "dispatching",
+      "tracking shipments"
+    ],
+    "description": "Searching for a Logistics Coordinator skilled in freight routing, customs compliance, dispatching, and tracking shipments."
+  },
+  {
+    "id": "j44",
+    "category": "Supply Chain & Logistics",
+    "skills_required": [
+      "strategic sourcing",
+      "purchase orders",
+      "contract management",
+      "supplier relations"
+    ],
+    "description": "Looking for a Procurement Specialist experienced in strategic sourcing, purchase orders, contract management, and supplier relations."
+  },
+  {
+    "id": "j45",
+    "category": "Supply Chain & Logistics",
+    "skills_required": [
+      "inventory management",
+      "osha safety standards",
+      "staff scheduling",
+      "forklift operation"
+    ],
+    "description": "Seeking a Warehouse Supervisor skilled in inventory management, OSHA safety standards, staff scheduling, and forklift operation."
+  },
+  {
+    "id": "j46",
+    "category": "IT Support",
+    "skills_required": [
+      "helpdesk ticketing",
+      "windows/mac troubleshooting",
+      "active directory",
+      "office 365"
+    ],
+    "description": "Hiring an IT Support Specialist proficient in Helpdesk ticketing, Windows/Mac troubleshooting, Active Directory, and Office 365."
+  },
+  {
+    "id": "j47",
+    "category": "IT Infrastructure",
+    "skills_required": [
+      "cisco routing and switching",
+      "firewalls",
+      "vpn configuration",
+      "bgp/ospf"
+    ],
+    "description": "Looking for a Network Engineer experienced in Cisco routing and switching, firewalls, VPN configuration, and BGP/OSPF."
+  },
+  {
+    "id": "j48",
+    "category": "IT Infrastructure",
+    "skills_required": [
+      "linux server management",
+      "vmware",
+      "scripting",
+      "system backups"
+    ],
+    "description": "Seeking a Systems Administrator skilled in Linux server management, VMware, scripting (Bash/PowerShell), and system backups."
+  },
+  {
+    "id": "j49",
+    "category": "Cybersecurity",
+    "skills_required": [
+      "okta",
+      "sso",
+      "saml",
+      "role-based access control"
+    ],
+    "description": "Searching for an Identity and Access Management Engineer knowledgeable in Okta, SSO, SAML, and role-based access control."
+  },
+  {
+    "id": "j50",
+    "category": "Technical Writing",
+    "skills_required": [
+      "api documentation",
+      "user manuals",
+      "markdown",
+      "developer tools"
+    ],
+    "description": "Hiring a Technical Writer experienced in creating API documentation, user manuals, Markdown, and working with developer tools."
+  },
+  {
+    "id": "j51",
+    "category": "Legal",
+    "skills_required": [
+      "contract law",
+      "compliance",
+      "ip protection",
+      "managing external litigation"
+    ],
+    "description": "Looking for a Corporate Counsel skilled in contract law, compliance, IP protection, and managing external litigation."
+  },
+  {
+    "id": "j52",
+    "category": "Compliance",
+    "skills_required": [
+      "regulatory audits",
+      "risk assessment",
+      "policy development",
+      "industry regulations"
+    ],
+    "description": "Seeking a Compliance Officer experienced in regulatory audits, risk assessment, policy development, and industry regulations."
+  },
+  {
+    "id": "j53",
+    "category": "Legal",
+    "skills_required": [
+      "legal research",
+      "drafting pleadings",
+      "case management software",
+      "trial preparation"
+    ],
+    "description": "Hiring a Paralegal proficient in legal research, drafting pleadings, case management software, and trial preparation."
+  },
+  {
+    "id": "j54",
+    "category": "Cybersecurity",
+    "skills_required": [
+      "enterprise risk management",
+      "infosec governance",
+      "compliance"
+    ],
+    "description": "Searching for a Chief Information Security Officer (CISO) knowledgeable in enterprise risk management, infosec governance, and compliance."
+  },
+  {
+    "id": "j55",
+    "category": "Healthcare",
+    "skills_required": [
+      "patient triage",
+      "taking vital signs",
+      "phlebotomy",
+      "emr systems"
+    ],
+    "description": "Looking for a Medical Assistant skilled in patient triage, taking vital signs, phlebotomy, and managing EMR systems."
+  },
+  {
+    "id": "j56",
+    "category": "Healthcare",
+    "skills_required": [
+      "critical care",
+      "administering medications",
+      "patient assessment",
+      "bls/acls protocols"
+    ],
+    "description": "Seeking a Registered Nurse experienced in critical care, administering medications, patient assessment, and BLS/ACLS protocols."
+  },
+  {
+    "id": "j57",
+    "category": "Healthcare",
+    "skills_required": [
+      "regulatory compliance",
+      "patient screening",
+      "edc systems",
+      "clinical documentation"
+    ],
+    "description": "Hiring a Clinical Trial Coordinator proficient in regulatory compliance, patient screening, EDC systems, and clinical documentation."
+  },
+  {
+    "id": "j58",
+    "category": "Healthcare Administration",
+    "skills_required": [
+      "hospital operations",
+      "budgeting",
+      "staff scheduling",
+      "medicare compliance"
+    ],
+    "description": "Searching for a Healthcare Administrator skilled in hospital operations, budgeting, staff scheduling, and Medicare compliance."
+  },
+  {
+    "id": "j59",
+    "category": "Healthcare",
+    "skills_required": [
+      "dispensing medications",
+      "patient consultation",
+      "pharmacology",
+      "pharmacy management software"
+    ],
+    "description": "Looking for a Pharmacist knowledgeable in dispensing medications, patient consultation, pharmacology, and pharmacy management software."
+  },
+  {
+    "id": "j60",
+    "category": "Engineering",
+    "skills_required": [
+      "autocad",
+      "site surveying",
+      "structural analysis",
+      "construction project management"
+    ],
+    "description": "Seeking a Civil Engineer experienced in AutoCAD, site surveying, structural analysis, and construction project management."
+  },
+  {
+    "id": "j61",
+    "category": "Engineering",
+    "skills_required": [
+      "solidworks",
+      "thermodynamics",
+      "finite element analysis (fea)",
+      "rapid prototyping"
+    ],
+    "description": "Hiring a Mechanical Engineer proficient in SolidWorks, thermodynamics, finite element analysis (FEA), and rapid prototyping."
+  },
+  {
+    "id": "j62",
+    "category": "Engineering",
+    "skills_required": [
+      "pcb design",
+      "circuit testing",
+      "matlab",
+      "microcontrollers"
+    ],
+    "description": "Looking for an Electrical Engineer skilled in PCB design, circuit testing, MATLAB, and microcontrollers."
+  },
+  {
+    "id": "j63",
+    "category": "Engineering",
+    "skills_required": [
+      "workflow optimization",
+      "lean six sigma",
+      "manufacturing processes",
+      "ergonomics"
+    ],
+    "description": "Searching for an Industrial Engineer experienced in workflow optimization, Lean Six Sigma, manufacturing processes, and ergonomics."
+  },
+  {
+    "id": "j64",
+    "category": "Architecture",
+    "skills_required": [
+      "revit",
+      "3d rendering",
+      "building codes",
+      "drafting commercial blueprints"
+    ],
+    "description": "Seeking an Architect skilled in Revit, 3D rendering, building codes, and drafting commercial blueprints."
+  },
+  {
+    "id": "j65",
+    "category": "Customer Support",
+    "skills_required": [
+      "zendesk",
+      "conflict resolution",
+      "live chat",
+      "communication skills"
+    ],
+    "description": "Hiring a Customer Support Representative proficient in Zendesk, conflict resolution, live chat, and communication skills."
+  },
+  {
+    "id": "j66",
+    "category": "Administration",
+    "skills_required": [
+      "calendar management",
+      "travel booking",
+      "expense reporting",
+      "communication"
+    ],
+    "description": "Looking for an Executive Assistant experienced in complex calendar management, travel booking, expense reporting, and communication."
+  },
+  {
+    "id": "j67",
+    "category": "Administration",
+    "skills_required": [
+      "facility management",
+      "vendor coordination",
+      "inventory supply",
+      "event planning"
+    ],
+    "description": "Seeking an Office Manager skilled in facility management, vendor coordination, inventory supply, and event planning."
+  },
+  {
+    "id": "j68",
+    "category": "Design & Media",
+    "skills_required": [
+      "adobe illustrator",
+      "photoshop",
+      "typography",
+      "brand identity creation"
+    ],
+    "description": "Searching for a Graphic Designer proficient in Adobe Illustrator, Photoshop, typography, and brand identity creation."
+  },
+  {
+    "id": "j69",
+    "category": "Design & Media",
+    "skills_required": [
+      "premiere pro",
+      "after effects",
+      "color grading",
+      "motion graphics"
+    ],
+    "description": "Hiring a Video Editor experienced with Premiere Pro, After Effects, color grading, and motion graphics."
+  },
+  {
+    "id": "j70",
+    "category": "Design & Media",
+    "skills_required": [
+      "maya",
+      "blender",
+      "texture mapping",
+      "gaming environments"
+    ],
+    "description": "Looking for a 3D Artist skilled in Maya, Blender, texture mapping, and creating assets for gaming environments."
+  },
+  {
+    "id": "j71",
+    "category": "Game Development",
+    "skills_required": [
+      "level design",
+      "unreal engine",
+      "gameplay balancing",
+      "narrative scripting"
+    ],
+    "description": "Seeking a Game Designer experienced in level design, Unreal Engine, gameplay balancing, and narrative scripting."
+  },
+  {
+    "id": "j72",
+    "category": "Marketing",
+    "skills_required": [
+      "ad copy",
+      "email sequences",
+      "seo articles",
+      "brand storytelling"
+    ],
+    "description": "Hiring a Copywriter proficient in writing ad copy, email sequences, SEO articles, and brand storytelling."
+  },
+  {
+    "id": "j73",
+    "category": "Event Management",
+    "skills_required": [
+      "venue sourcing",
+      "budget management",
+      "timeline execution",
+      "vendor relations"
+    ],
+    "description": "Looking for an Event Coordinator skilled in venue sourcing, budget management, timeline execution, and vendor relations."
+  },
+  {
+    "id": "j74",
+    "category": "Public Relations",
+    "skills_required": [
+      "press releases",
+      "media pitching",
+      "crisis communication",
+      "corporate messaging"
+    ],
+    "description": "Searching for a Public Relations Manager experienced in press releases, media pitching, crisis communication, and corporate messaging."
+  },
+  {
+    "id": "j75",
+    "category": "Real Estate",
+    "skills_required": [
+      "property valuation",
+      "client negotiation",
+      "mls listings",
+      "closing procedures"
+    ],
+    "description": "Seeking a Real Estate Agent knowledgeable in property valuation, client negotiation, MLS listings, and closing procedures."
+  },
+  {
+    "id": "j76",
+    "category": "Software Engineering",
+    "skills_required": [
+      "solidity",
+      "smart contract development",
+      "web3.js",
+      "decentralized applications (dapps)"
+    ],
+    "description": "Hiring a Blockchain Developer skilled in Solidity, smart contract development, Web3.js, and decentralized applications (dApps)."
+  },
+  {
+    "id": "j77",
+    "category": "Engineering",
+    "skills_required": [
+      "embedded systems",
+      "c++",
+      "raspberry pi",
+      "mqtt protocols",
+      "sensor integration"
+    ],
+    "description": "Looking for an IoT Engineer experienced in embedded systems, C++, Raspberry Pi, MQTT protocols, and sensor integration."
+  },
+  {
+    "id": "j78",
+    "category": "Engineering",
+    "skills_required": [
+      "ros (robot operating system)",
+      "kinematics",
+      "machine vision",
+      "python"
+    ],
+    "description": "Seeking a Robotics Engineer proficient in ROS (Robot Operating System), kinematics, machine vision, and Python."
+  },
+  {
+    "id": "j79",
+    "category": "Data Science & Finance",
+    "skills_required": [
+      "stochastic calculus",
+      "algorithmic trading",
+      "r",
+      "statistical modeling"
+    ],
+    "description": "Hiring a Quantitative Analyst skilled in stochastic calculus, algorithmic trading, R, and statistical modeling."
+  },
+  {
+    "id": "j80",
+    "category": "Translation & Localization",
+    "skills_required": [
+      "english-spanish translation",
+      "localization",
+      "proofreading",
+      "cat tools"
+    ],
+    "description": "Searching for a Translation Specialist experienced in English-Spanish translation, localization, proofreading, and CAT tools."
+  },
+  {
+    "id": "j81",
+    "category": "E-Commerce",
+    "skills_required": [
+      "shopify",
+      "conversion rate optimization",
+      "digital merchandising",
+      "inventory tracking"
+    ],
+    "description": "Looking for an E-commerce Manager skilled in Shopify, conversion rate optimization, digital merchandising, and inventory tracking."
+  },
+  {
+    "id": "j82",
+    "category": "Marketing",
+    "skills_required": [
+      "market research",
+      "product positioning",
+      "visual identity",
+      "consumer behavior analysis"
+    ],
+    "description": "Seeking a Brand Manager experienced in market research, product positioning, visual identity, and consumer behavior analysis."
+  },
+  {
+    "id": "j83",
+    "category": "Cybersecurity",
+    "skills_required": [
+      "ethical hacking",
+      "metasploit",
+      "vulnerability assessments",
+      "web application security"
+    ],
+    "description": "Hiring a Penetration Tester proficient in ethical hacking, Metasploit, vulnerability assessments, and web application security."
+  },
+  {
+    "id": "j84",
+    "category": "Database Administration",
+    "skills_required": [
+      "sql queries",
+      "stored procedures",
+      "ssrs",
+      "database normalization"
+    ],
+    "description": "Looking for a Database Developer skilled in writing complex SQL queries, stored procedures, SSRS, and database normalization."
+  },
+  {
+    "id": "j85",
+    "category": "Project Management",
+    "skills_required": [
+      "version control",
+      "release planning",
+      "git",
+      "cross-team communication"
+    ],
+    "description": "Seeking a Release Manager experienced in version control, release planning, Git, and cross-team communication."
+  },
+  {
+    "id": "j86",
+    "category": "Business Analysis",
+    "skills_required": [
+      "requirements gathering",
+      "process modeling",
+      "user story creation",
+      "stakeholder management"
+    ],
+    "description": "Hiring a Business Analyst proficient in requirements gathering, process modeling, user story creation, and stakeholder management."
+  },
+  {
+    "id": "j87",
+    "category": "Facilities Management",
+    "skills_required": [
+      "building maintenance",
+      "hvac systems",
+      "contract negotiation",
+      "safety protocols"
+    ],
+    "description": "Searching for a Facilities Manager skilled in building maintenance, HVAC systems, contract negotiation, and safety protocols."
+  },
+  {
+    "id": "j88",
+    "category": "Education & Training",
+    "skills_required": [
+      "e-learning modules",
+      "scorm compliance",
+      "articulate storyline",
+      "curriculum development"
+    ],
+    "description": "Looking for an Instructional Designer experienced in creating e-learning modules, SCORM compliance, Articulate Storyline, and curriculum development."
+  },
+  {
+    "id": "j89",
+    "category": "Risk Management",
+    "skills_required": [
+      "anomaly detection",
+      "financial investigation",
+      "data analysis",
+      "regulatory compliance"
+    ],
+    "description": "Seeking a Fraud Analyst skilled in anomaly detection, financial investigation, data analysis, and regulatory compliance."
+  },
+  {
+    "id": "j90",
+    "category": "Finance & Insurance",
+    "skills_required": [
+      "risk evaluation",
+      "insurance policies",
+      "financial analysis",
+      "decision-making"
+    ],
+    "description": "Hiring an Underwriter knowledgeable in risk evaluation, insurance policies, financial analysis, and decision-making."
+  },
+  {
+    "id": "j91",
+    "category": "Healthcare Research",
+    "skills_required": [
+      "clinical trial design",
+      "sas programming",
+      "survival analysis",
+      "fda regulatory submissions"
+    ],
+    "description": "Looking for a Biostatistician experienced in clinical trial design, SAS programming, survival analysis, and FDA regulatory submissions."
+  },
+  {
+    "id": "j92",
+    "category": "Engineering",
+    "skills_required": [
+      "process simulation",
+      "scaling production",
+      "thermodynamics",
+      "safety compliance"
+    ],
+    "description": "Seeking a Chemical Engineer skilled in process simulation, scaling production, thermodynamics, and safety compliance."
+  },
+  {
+    "id": "j93",
+    "category": "Science",
+    "skills_required": [
+      "field sampling",
+      "impact assessment reports",
+      "gis",
+      "environmental regulations"
+    ],
+    "description": "Hiring an Environmental Scientist knowledgeable in field sampling, impact assessment reports, GIS, and environmental regulations."
+  },
+  {
+    "id": "j94",
+    "category": "Science",
+    "skills_required": [
+      "seismic interpretation",
+      "core logging",
+      "mineral exploration",
+      "geostatistical modeling"
+    ],
+    "description": "Searching for a Geologist experienced in seismic interpretation, core logging, mineral exploration, and geostatistical modeling."
+  },
+  {
+    "id": "j95",
+    "category": "Engineering",
+    "skills_required": [
+      "alloy development",
+      "heat treatment processes",
+      "failure analysis",
+      "material testing"
+    ],
+    "description": "Looking for a Metallurgical Engineer skilled in alloy development, heat treatment processes, failure analysis, and material testing."
+  },
+  {
+    "id": "j96",
+    "category": "Quality Assurance",
+    "skills_required": [
+      "iso standards",
+      "defect tracking",
+      "precision measurement tools",
+      "documentation"
+    ],
+    "description": "Seeking a Quality Assurance Inspector proficient in ISO standards, defect tracking, precision measurement tools, and documentation."
+  },
+  {
+    "id": "j97",
+    "category": "Construction Management",
+    "skills_required": [
+      "site supervision",
+      "subcontractor management",
+      "construction scheduling",
+      "budget tracking"
+    ],
+    "description": "Hiring a Construction Manager experienced in site supervision, subcontractor management, construction scheduling, and budget tracking."
+  },
+  {
+    "id": "j98",
+    "category": "Consulting",
+    "skills_required": [
+      "esg reporting",
+      "carbon footprint analysis",
+      "energy efficiency",
+      "corporate sustainability strategy"
+    ],
+    "description": "Looking for a Sustainability Consultant skilled in ESG reporting, carbon footprint analysis, energy efficiency, and corporate sustainability strategy."
+  },
+  {
+    "id": "j99",
+    "category": "Engineering",
+    "skills_required": [
+      "aerodynamics",
+      "propulsion systems",
+      "catia",
+      "structural testing"
+    ],
+    "description": "Seeking an Aerospace Engineer knowledgeable in aerodynamics, propulsion systems, CATIA, and structural testing."
+  },
+  {
+    "id": "j100",
+    "category": "Supply Chain & Logistics",
+    "skills_required": [
+      "vehicle maintenance scheduling",
+      "route optimization",
+      "dot compliance",
+      "logistics software"
+    ],
+    "description": "Hiring a Fleet Manager skilled in vehicle maintenance scheduling, route optimization, DOT compliance, and logistics software."
+  },
+  {
+    "id": "j101",
+    "category": "Retail",
+    "skills_required": [
+      "retail displays",
+      "inventory forecasting",
+      "vendor relations",
+      "sales trend analysis"
+    ],
+    "description": "Searching for a Merchandiser experienced in retail displays, inventory forecasting, vendor relations, and sales trend analysis."
+  },
+  {
+    "id": "j102",
+    "category": "Hospitality",
+    "skills_required": [
+      "hospitality operations",
+      "revenue management",
+      "guest satisfaction",
+      "staff leadership"
+    ],
+    "description": "Looking for a Hotel General Manager skilled in hospitality operations, revenue management, guest satisfaction, and staff leadership."
+  },
+  {
+    "id": "j103",
+    "category": "Hospitality",
+    "skills_required": [
+      "food safety standards",
+      "inventory control",
+      "team scheduling",
+      "customer service"
+    ],
+    "description": "Seeking a Restaurant Manager proficient in food safety standards, inventory control, team scheduling, and customer service."
+  },
+  {
+    "id": "j104",
+    "category": "Hospitality",
+    "skills_required": [
+      "menu creation",
+      "culinary management",
+      "food cost control",
+      "kitchen safety"
+    ],
+    "description": "Hiring an Executive Chef experienced in menu creation, culinary management, food cost control, and kitchen safety."
+  },
+  {
+    "id": "j105",
+    "category": "Retail",
+    "skills_required": [
+      "visual merchandising",
+      "loss prevention",
+      "sales coaching",
+      "store operations"
+    ],
+    "description": "Looking for a Retail Store Manager skilled in visual merchandising, loss prevention, sales coaching, and store operations."
+  },
+  {
+    "id": "j106",
+    "category": "Non-Profit",
+    "skills_required": [
+      "donor relations",
+      "grant writing",
+      "campaign management",
+      "crm software"
+    ],
+    "description": "Seeking a Fundraiser knowledgeable in donor relations, grant writing, campaign management, and CRM software."
+  },
+  {
+    "id": "j107",
+    "category": "Non-Profit",
+    "skills_required": [
+      "community outreach",
+      "schedule management",
+      "event planning",
+      "training"
+    ],
+    "description": "Hiring a Volunteer Coordinator experienced in community outreach, schedule management, event planning, and training."
+  },
+  {
+    "id": "j108",
+    "category": "Healthcare",
+    "skills_required": [
+      "pediatric therapy",
+      "articulation disorders",
+      "patient assessment",
+      "clinical documentation"
+    ],
+    "description": "Searching for a Speech-Language Pathologist skilled in pediatric therapy, articulation disorders, patient assessment, and clinical documentation."
+  },
+  {
+    "id": "j109",
+    "category": "Healthcare",
+    "skills_required": [
+      "rehabilitation",
+      "adl training",
+      "custom orthotics",
+      "patient care"
+    ],
+    "description": "Looking for an Occupational Therapist experienced in rehabilitation, ADL training, custom orthotics, and patient care."
+  },
+  {
+    "id": "j110",
+    "category": "Healthcare",
+    "skills_required": [
+      "injury recovery",
+      "exercise prescription",
+      "manual therapy",
+      "clinical evaluations"
+    ],
+    "description": "Seeking a Physical Therapist proficient in injury recovery, exercise prescription, manual therapy, and clinical evaluations."
+  },
+  {
+    "id": "j111",
+    "category": "Healthcare",
+    "skills_required": [
+      "teeth cleaning",
+      "patient education",
+      "x-rays",
+      "periodontal charting"
+    ],
+    "description": "Hiring a Dental Hygienist knowledgeable in teeth cleaning, patient education, X-rays, and periodontal charting."
+  },
+  {
+    "id": "j112",
+    "category": "Healthcare",
+    "skills_required": [
+      "mri/ct scanners",
+      "patient positioning",
+      "radiation safety",
+      "image quality assessment"
+    ],
+    "description": "Looking for a Radiologic Technologist skilled in operating MRI/CT scanners, patient positioning, radiation safety, and image quality assessment."
+  },
+  {
+    "id": "j113",
+    "category": "Veterinary Medicine",
+    "skills_required": [
+      "animal surgery",
+      "preventative medicine",
+      "diagnostics",
+      "client communication"
+    ],
+    "description": "Seeking a Veterinarian experienced in animal surgery, preventative medicine, diagnostics, and client communication."
+  },
+  {
+    "id": "j114",
+    "category": "Veterinary Medicine",
+    "skills_required": [
+      "animal handling",
+      "surgical assistance",
+      "lab testing",
+      "administering medications"
+    ],
+    "description": "Hiring a Veterinary Technician proficient in animal handling, surgical assistance, lab testing, and administering medications."
+  },
+  {
+    "id": "j115",
+    "category": "Education",
+    "skills_required": [
+      "educational standards",
+      "lesson planning",
+      "assessment design",
+      "e-learning integration"
+    ],
+    "description": "Searching for a Curriculum Developer skilled in educational standards, lesson planning, assessment design, and e-learning integration."
+  },
+  {
+    "id": "j116",
+    "category": "Education",
+    "skills_required": [
+      "academic advising",
+      "mental health support",
+      "crisis intervention",
+      "student advocacy"
+    ],
+    "description": "Looking for a School Counselor experienced in academic advising, mental health support, crisis intervention, and student advocacy."
+  },
+  {
+    "id": "j117",
+    "category": "Education",
+    "skills_required": [
+      "academic research",
+      "lecturing",
+      "curriculum design",
+      "publishing"
+    ],
+    "description": "Seeking a University Professor knowledgeable in academic research, lecturing, curriculum design, and publishing."
+  },
+  {
+    "id": "j118",
+    "category": "Education",
+    "skills_required": [
+      "cataloging",
+      "database management",
+      "research assistance",
+      "community programming"
+    ],
+    "description": "Hiring a Librarian skilled in cataloging, database management, research assistance, and community programming."
+  },
+  {
+    "id": "j119",
+    "category": "Media Production",
+    "skills_required": [
+      "audio mixing",
+      "live sound reinforcement",
+      "pro tools",
+      "acoustics"
+    ],
+    "description": "Looking for a Sound Engineer experienced in audio mixing, live sound reinforcement, Pro Tools, and acoustics."
+  },
+  {
+    "id": "j120",
+    "category": "Media Production",
+    "skills_required": [
+      "portrait photography",
+      "lighting techniques",
+      "adobe lightroom",
+      "photo editing"
+    ],
+    "description": "Seeking a Photographer proficient in portrait photography, lighting techniques, Adobe Lightroom, and photo editing."
+  },
+  {
+    "id": "j121",
+    "category": "Media Production",
+    "skills_required": [
+      "camera operation",
+      "lighting design",
+      "shot composition",
+      "visual storytelling"
+    ],
+    "description": "Hiring a Cinematographer skilled in camera operation, lighting design, shot composition, and visual storytelling."
+  },
+  {
+    "id": "j122",
+    "category": "Media Production",
+    "skills_required": [
+      "av equipment",
+      "broadcast switching",
+      "stage management",
+      "crew leadership"
+    ],
+    "description": "Searching for a Technical Director (Live Events) experienced in AV equipment, broadcast switching, stage management, and crew leadership."
+  },
+  {
+    "id": "j123",
+    "category": "IT Operations",
+    "skills_required": [
+      "website maintenance",
+      "html/css",
+      "cms administration",
+      "server troubleshooting"
+    ],
+    "description": "Looking for a Webmaster skilled in website maintenance, HTML/CSS, CMS administration, and server troubleshooting."
+  },
+  {
+    "id": "j124",
+    "category": "DevOps & Cloud",
+    "skills_required": [
+      "system monitoring",
+      "incident management",
+      "automation",
+      "sla tracking"
+    ],
+    "description": "Seeking a Site Reliability Engineer (SRE) experienced in system monitoring, incident management, automation, and SLA tracking."
+  },
+  {
+    "id": "j125",
+    "category": "IT Consulting",
+    "skills_required": [
+      "system implementation",
+      "business process mapping",
+      "user training",
+      "sap/oracle"
+    ],
+    "description": "Hiring an ERP Consultant proficient in system implementation, business process mapping, user training, and SAP/Oracle."
+  },
+  {
+    "id": "j126",
+    "category": "Software Engineering",
+    "skills_required": [
+      "salesforce apex",
+      "lightning web components",
+      "workflow automation",
+      "integrations"
+    ],
+    "description": "Looking for a CRM Developer skilled in Salesforce Apex, Lightning Web Components, workflow automation, and integrations."
+  },
+  {
+    "id": "j127",
+    "category": "Software Engineering",
+    "skills_required": [
+      "cobol",
+      "jcl",
+      "db2",
+      "legacy system modernization"
+    ],
+    "description": "Seeking a Mainframe Developer experienced in COBOL, JCL, DB2, and legacy system modernization."
+  },
+  {
+    "id": "j128",
+    "category": "Data Science & AI",
+    "skills_required": [
+      "opencv",
+      "deep learning",
+      "image processing",
+      "object detection"
+    ],
+    "description": "Searching for a Computer Vision Engineer knowledgeable in OpenCV, deep learning, image processing, and object detection."
+  },
+  {
+    "id": "j129",
+    "category": "Game Development",
+    "skills_required": [
+      "c++",
+      "wwise",
+      "dsp",
+      "game engine integration"
+    ],
+    "description": "Hiring an Audio Programmer skilled in C++, Wwise, DSP (Digital Signal Processing), and game engine integration."
+  },
+  {
+    "id": "j130",
+    "category": "Translation & Localization",
+    "skills_required": [
+      "l10n testing",
+      "script writing",
+      "internationalization",
+      "unicode"
+    ],
+    "description": "Looking for a Localization Engineer experienced in L10n testing, script writing, internationalization, and unicode."
+  },
+  {
+    "id": "j131",
+    "category": "Data Engineering",
+    "skills_required": [
+      "data governance",
+      "data quality tools",
+      "sql",
+      "data profiling"
+    ],
+    "description": "Seeking a Master Data Management (MDM) Specialist proficient in data governance, data quality tools, SQL, and data profiling."
+  },
+  {
+    "id": "j132",
+    "category": "Finance & Insurance",
+    "skills_required": [
+      "risk analysis",
+      "probability modeling",
+      "vba",
+      "pricing insurance premiums"
+    ],
+    "description": "Hiring an Actuary skilled in risk analysis, probability modeling, VBA, and pricing insurance premiums."
+  },
+  {
+    "id": "j133",
+    "category": "Finance & Insurance",
+    "skills_required": [
+      "insurance investigations",
+      "damage estimation",
+      "negotiation",
+      "claims processing"
+    ],
+    "description": "Searching for a Claims Adjuster experienced in insurance investigations, damage estimation, negotiation, and claims processing."
+  },
+  {
+    "id": "j134",
+    "category": "Finance & Insurance",
+    "skills_required": [
+      "mortgage lending",
+      "credit analysis",
+      "financial regulations",
+      "customer service"
+    ],
+    "description": "Looking for a Loan Officer knowledgeable in mortgage lending, credit analysis, financial regulations, and customer service."
+  },
+  {
+    "id": "j135",
+    "category": "Finance",
+    "skills_required": [
+      "financial planning",
+      "investment strategy",
+      "retirement planning",
+      "client relationship management"
+    ],
+    "description": "Seeking a Wealth Advisor skilled in financial planning, investment strategy, retirement planning, and client relationship management."
+  },
+  {
+    "id": "j136",
+    "category": "Finance",
+    "skills_required": [
+      "corporate tax filings",
+      "irs compliance",
+      "tax strategy",
+      "audit support"
+    ],
+    "description": "Hiring a Tax Accountant proficient in corporate tax filings, IRS compliance, tax strategy, and audit support."
+  },
+  {
+    "id": "j137",
+    "category": "Compliance",
+    "skills_required": [
+      "sox compliance",
+      "operational audits",
+      "risk management",
+      "report writing"
+    ],
+    "description": "Looking for an Internal Auditor experienced in SOX compliance, operational audits, risk management, and report writing."
+  },
+  {
+    "id": "j138",
+    "category": "Supply Chain & Logistics",
+    "skills_required": [
+      "customs clearance",
+      "tariff classification",
+      "shipping documentation",
+      "international trade laws"
+    ],
+    "description": "Seeking an Export/Import Specialist skilled in customs clearance, tariff classification, shipping documentation, and international trade laws."
+  },
+  {
+    "id": "j139",
+    "category": "Engineering",
+    "skills_required": [
+      "material science",
+      "cad design",
+      "sustainability",
+      "packaging testing protocols"
+    ],
+    "description": "Hiring a Packaging Engineer knowledgeable in material science, CAD design, sustainability, and packaging testing protocols."
+  },
+  {
+    "id": "j140",
+    "category": "Science",
+    "skills_required": [
+      "crop management",
+      "soil science",
+      "pest control",
+      "agricultural research"
+    ],
+    "description": "Searching for an Agronomist experienced in crop management, soil science, pest control, and agricultural research."
+  },
+  {
+    "id": "j141",
+    "category": "Urban Planning",
+    "skills_required": [
+      "zoning laws",
+      "land use planning",
+      "gis",
+      "community development"
+    ],
+    "description": "Looking for an Urban Planner skilled in zoning laws, land use planning, GIS, and community development."
+  },
+  {
+    "id": "j142",
+    "category": "Engineering",
+    "skills_required": [
+      "traffic flow analysis",
+      "signal timing",
+      "transportation planning",
+      "safety audits"
+    ],
+    "description": "Seeking a Traffic Engineer proficient in traffic flow analysis, signal timing, transportation planning, and safety audits."
+  },
+  {
+    "id": "j143",
+    "category": "Health & Safety",
+    "skills_required": [
+      "osha compliance",
+      "hazard identification",
+      "safety training",
+      "incident investigation"
+    ],
+    "description": "Hiring a Health and Safety Officer experienced in OSHA compliance, hazard identification, safety training, and incident investigation."
+  },
+  {
+    "id": "j144",
+    "category": "Design & Media",
+    "skills_required": [
+      "2d/3d animation",
+      "rigging",
+      "keyframing",
+      "character design"
+    ],
+    "description": "Looking for an Animator skilled in 2D/3D animation, rigging, keyframing, and character design."
+  },
+  {
+    "id": "j145",
+    "category": "Arts & Culture",
+    "skills_required": [
+      "artifact restoration",
+      "chemistry",
+      "historical research",
+      "preservation techniques"
+    ],
+    "description": "Seeking an Art Conservator knowledgeable in artifact restoration, chemistry, historical research, and preservation techniques."
+  },
+  {
+    "id": "j146",
+    "category": "Architecture & Design",
+    "skills_required": [
+      "space planning",
+      "autocad",
+      "material selection",
+      "project management"
+    ],
+    "description": "Hiring an Interior Designer experienced in space planning, AutoCAD, material selection, and project management."
+  },
+  {
+    "id": "j147",
+    "category": "Design & Apparel",
+    "skills_required": [
+      "fashion sketching",
+      "tech packs",
+      "fabric sourcing",
+      "trend forecasting"
+    ],
+    "description": "Searching for an Apparel Designer skilled in fashion sketching, tech packs, fabric sourcing, and trend forecasting."
+  },
+  {
+    "id": "j148",
+    "category": "Healthcare Research",
+    "skills_required": [
+      "epidemiological research",
+      "health policy evaluation",
+      "sas",
+      "data collection"
+    ],
+    "description": "Looking for a Public Health Analyst experienced in epidemiological research, health policy evaluation, SAS, and data collection."
+  },
+  {
+    "id": "j149",
+    "category": "Healthcare",
+    "skills_required": [
+      "comprehensive eye exams",
+      "prescribing corrective lenses",
+      "diagnosing ocular diseases",
+      "patient care"
+    ],
+    "description": "Seeking an Optometrist skilled in comprehensive eye exams, prescribing corrective lenses, diagnosing ocular diseases, and patient care."
+  },
+  {
+    "id": "j150",
+    "category": "Science",
+    "skills_required": [
+      "weather forecasting",
+      "atmospheric data analysis",
+      "radar interpretation",
+      "broadcasting"
+    ],
+    "description": "Hiring a Meteorologist proficient in weather forecasting, atmospheric data analysis, radar interpretation, and broadcasting."
+  }
+]

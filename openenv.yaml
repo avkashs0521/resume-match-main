@@ -1,0 +1,40 @@
+name: resume-matching-env
+description: "AI environment for real-world Job-Resume matching and candidate ranking."
+version: "1.0.0"
+author: "HR AI Team"
+tags: ["hr", "matching", "resume", "ranking", "recruitment"]
+
+# OpenEnv execution metadata
+runtime:
+  type: "docker"
+  image: "resume-matching-env"
+  base_image: "python:3.10-slim"
+
+# OpenEnv spaces metadata
+observation_space:
+  type: "dict"
+  schema:
+    resumes: "List[Resume]"
+    jobs: "List[Job]"
+    current_matches: "Dict[str, Union[str, List[str]]]"
+    step_count: "int"
+
+action_space:
+  type: "dict"
+  schema:
+    matches: "Dict[str, str]"
+    ranked_list: "List[str]"
+
+# Define tasks exposed by the environment
+tasks:
+  - id: "easy"
+    difficulty: "easy"
+    description: "Match a single job to the single best resume."
+  
+  - id: "medium"
+    difficulty: "medium"
+    description: "Rank the top 3 best resumes for a specific job."
+
+  - id: "hard"
+    difficulty: "hard"
+    description: "Optimally assign a mixed batch of resumes to a mixed batch of jobs."

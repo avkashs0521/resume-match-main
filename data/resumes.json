@@ -1,0 +1,202 @@
+[
+  {
+    "id": "r0",
+    "skills": [
+      "sql",
+      "aws",
+      "kubernetes"
+    ],
+    "experience": 3,
+    "text": "Experienced in sql aws kubernetes"
+  },
+  {
+    "id": "r1",
+    "skills": [
+      "java",
+      "react",
+      "kubernetes"
+    ],
+    "experience": 4,
+    "text": "Experienced in java react kubernetes"
+  },
+  {
+    "id": "r2",
+    "skills": [
+      "sql",
+      "ml",
+      "python"
+    ],
+    "experience": 5,
+    "text": "Experienced in sql ml python"
+  },
+  {
+    "id": "r3",
+    "skills": [
+      "sql",
+      "java",
+      "docker"
+    ],
+    "experience": 3,
+    "text": "Experienced in sql java docker"
+  },
+  {
+    "id": "r4",
+    "skills": [
+      "aws",
+      "node",
+      "kubernetes"
+    ],
+    "experience": 1,
+    "text": "Experienced in aws node kubernetes"
+  },
+  {
+    "id": "r5",
+    "skills": [
+      "docker",
+      "java",
+      "react"
+    ],
+    "experience": 1,
+    "text": "Experienced in docker java react"
+  },
+  {
+    "id": "r6",
+    "skills": [
+      "docker",
+      "ml",
+      "sql"
+    ],
+    "experience": 2,
+    "text": "Experienced in docker ml sql"
+  },
+  {
+    "id": "r7",
+    "skills": [
+      "dl",
+      "ml",
+      "aws"
+    ],
+    "experience": 1,
+    "text": "Experienced in dl ml aws"
+  },
+  {
+    "id": "r8",
+    "skills": [
+      "react",
+      "python",
+      "ml"
+    ],
+    "experience": 1,
+    "text": "Experienced in react python ml"
+  },
+  {
+    "id": "r9",
+    "skills": [
+      "dl",
+      "ml",
+      "node"
+    ],
+    "experience": 5,
+    "text": "Experienced in dl ml node"
+  },
+  {
+    "id": "r10",
+    "skills": [
+      "node",
+      "python",
+      "sql"
+    ],
+    "experience": 2,
+    "text": "Experienced in node python sql"
+  },
+  {
+    "id": "r11",
+    "skills": [
+      "docker",
+      "react",
+      "java"
+    ],
+    "experience": 5,
+    "text": "Experienced in docker react java"
+  },
+  {
+    "id": "r12",
+    "skills": [
+      "dl",
+      "python",
+      "sql"
+    ],
+    "experience": 2,
+    "text": "Experienced in dl python sql"
+  },
+  {
+    "id": "r13",
+    "skills": [
+      "java",
+      "kubernetes",
+      "dl"
+    ],
+    "experience": 3,
+    "text": "Experienced in java kubernetes dl"
+  },
+  {
+    "id": "r14",
+    "skills": [
+      "react",
+      "python",
+      "aws"
+    ],
+    "experience": 0,
+    "text": "Experienced in react python aws"
+  },
+  {
+    "id": "r15",
+    "skills": [
+      "aws",
+      "node",
+      "sql"
+    ],
+    "experience": 1,
+    "text": "Experienced in aws node sql"
+  },
+  {
+    "id": "r16",
+    "skills": [
+      "docker",
+      "aws",
+      "dl"
+    ],
+    "experience": 1,
+    "text": "Experienced in docker aws dl"
+  },
+  {
+    "id": "r17",
+    "skills": [
+      "node",
+      "java",
+      "kubernetes"
+    ],
+    "experience": 3,
+    "text": "Experienced in node java kubernetes"
+  },
+  {
+    "id": "r18",
+    "skills": [
+      "python",
+      "dl",
+      "sql"
+    ],
+    "experience": 2,
+    "text": "Experienced in python dl sql"
+  },
+  {
+    "id": "r19",
+    "skills": [
+      "python",
+      "react",
+      "kubernetes"
+    ],
+    "experience": 5,
+    "text": "Experienced in python react kubernetes"
+  }
+]
