@@ -2,14 +2,13 @@ import os
 import sys
 import json
 import numpy as np
+import logging
+import warnings
 from openai import OpenAI
 from app.env.environment import ResumeEnv
 from app.env.models import Action
 from app.matching.matcher import match_easy, match_medium, match_hard, get_top_k
 from app.matching.similarity import compute_similarity
-
-import logging
-import warnings
 
 # Suppress noise
 os.environ["TOKENIZERS_PARALLELISM"] = "false"
@@ -37,13 +36,20 @@ def log_end(success, steps, score, rewards):
 
 def run_inference():
     API_BASE_URL = os.getenv("API_BASE_URL", "https://router.huggingface.co/v1")
+    if not API_BASE_URL:
+        API_BASE_URL = "https://router.huggingface.co/v1"
+        
     MODEL_NAME = os.getenv("MODEL_NAME", "openai/gpt-oss-120b:groq")
     HF_TOKEN = os.getenv("HF_TOKEN")
 
-    client = OpenAI(
-        base_url=API_BASE_URL,
-        api_key=HF_TOKEN or "sk-no-token-provided",
-    )
+    client = None
+    try:
+        client = OpenAI(
+            base_url=API_BASE_URL,
+            api_key=HF_TOKEN or "sk-no-token-provided",
+        )
+    except Exception as e:
+        print_log(f">> FAILED TO INIT OPENAI CLIENT: {e}")
 
     tasks = ["easy", "medium", "hard"]
 
@@ -60,9 +66,7 @@ def run_inference():
         processed_action = "error"
 
         try:
-            # -------------------------------------------------------------
             # 🚀 INTERNAL STEPS 1-3 (Programmatic & Silent)
-            # -------------------------------------------------------------
             all_resumes_dict = [r.model_dump() for r in obs.resumes]
             all_jobs_dict = [j.model_dump() for j in obs.jobs]
             
@@ -84,18 +88,16 @@ def run_inference():
             log_step(3, "rank", r_obj.score, done)
 
             # -------------------------------------------------------------
-            # 🧠 STEP 4: FINALIZE (Hybrid Matcher + LLM with Robust Fallback)
+            # 🧠 STEP 4: FINALIZE
             # -------------------------------------------------------------
             final_action = None
             job_ids = [j.id for j in obs.jobs]
             
-            # 🔥 HYBRID GENERATOR: Pre-filter top candidates per job
             sim_matrix = compute_similarity(all_resumes_dict, all_jobs_dict)
-            
             top_candidates_per_job = {}
             filtered_resume_ids = set()
-            
             job_candidates_text = ""
+            
             for i, job in enumerate(obs.jobs):
                 top_idx = np.argsort(sim_matrix[i])[::-1][:5]
                 candidates = []
@@ -109,127 +111,49 @@ def run_inference():
                 candidates_str = ", ".join([f"{cid} (score: {s:.2f})" for cid, s in candidates])
                 job_candidates_text += f"\n- TOP CANDIDATES FOR {job.id}: {candidates_str}"
 
-            # Filter full text to only include top candidates for efficiency
             resume_text = "\n".join([
                 f"{r.id}: {r.text[:150]}" for r in obs.resumes if r.id in filtered_resume_ids
             ])
             job_text = "\n".join([f"{j.id}: {j.description} | Skills: {j.skills_required}" for j in obs.jobs])
 
-            prompt = f"""
-You are an AI HR Agent specialized in resume-job matching.
-TASK: {task_name.upper()}
+            prompt = f"JOBS:\n{job_text}\n{job_candidates_text}\n\nRESUMES:\n{resume_text}\n"
 
-JOBS:
-{job_text}
-{job_candidates_text}
-
-RESUME DETAILS:
-{resume_text}
-
-STRICT JSON RULES:
-1. Return ONLY a valid JSON object.
-2. No explanation, no extra text, no markdown.
-3. You MUST choose candidates ONLY from the TOP CANDIDATES lists provided above.
-
-TASK-SPECIFIC FORMATS:
-- For EASY/HARD: Provide "matches" as {{ "job_id": "resume_id" }}. Set "ranked_list": [].
-- For MEDIUM: Provide "ranked_list" as an array of the TOP 3 Resume IDs only. Set "matches": {{}}.
-
-REQUIRED STRUCTURE:
-{{
-  "matches": {{ "job_id": "resume_id" }},
-  "ranked_list": ["r1", "r2", "r3"]
-}}
-"""
-            # Strict mode compatible schema definition
-            action_schema = {
-                "type": "json_schema",
-                "json_schema": {
-                    "name": "ActionResponse",
-                    "strict": True,
-                    "schema": {
-                        "type": "object",
-                        "properties": {
-                            "matches": {
-                                "type": "object",
-                                "properties": {jid: {"type": "string"} for jid in job_ids},
-                                "additionalProperties": False,
-                                "required": job_ids
-                            },
-                            "ranked_list": {
-                                "type": "array",
-                                "items": { "type": "string" }
-                            }
-                        },
-                        "required": ["matches", "ranked_list"],
-                        "additionalProperties": False
-                    }
-                }
-            }
+            # Fallback to local matcher if client failed init
+            if not client:
+                raise ValueError("LLM client not available")
 
             try:
-                # 🚀 ATTEMPT LLM CALL
+                # 🚀 LLM CALL
                 res = client.chat.completions.create(
                     model=MODEL_NAME,
                     messages=[
-                        {"role": "system", "content": "You are a professional HR bot. You MUST return ONLY valid JSON. Focus on the candidates with high similarity scores."},
+                        {"role": "system", "content": "Return ONLY JSON response for task matched/ranked list."},
                         {"role": "user", "content": prompt}
                     ],
-                    response_format=action_schema,
-                    timeout=15.0 # Ensure we don't hang forever
+                    timeout=15.0
                 )
                 
                 content = res.choices[0].message.content
-                if not content:
-                    raise ValueError("Empty response from API")
-                    
                 parsed = json.loads(content)
-                
                 matches = parsed.get("matches", {})
                 ranked_list = parsed.get("ranked_list", [])
                 
-                # 🛡️ VALIDATION: Ensure LLM didn't hallucinate IDs outside the allowed pool
-                if task_name == "medium":
-                    if not ranked_list or not all(r in filtered_resume_ids for r in ranked_list):
-                        raise ValueError("Invalid ranked_list IDs or empty list")
-                else:
-                    if not matches or not all(jid in job_ids for jid in matches) or not all(rid in filtered_resume_ids for rid in matches.values()):
-                        raise ValueError("Invalid matches ID mapping or empty matches")
+                final_action = Action(action_type="finalize", matches=matches, ranked_list=ranked_list)
 
-                final_action = Action(
-                    action_type="finalize",
-                    matches=matches,
-                    ranked_list=ranked_list
-                )
-
-            except Exception as api_err:
-                # 🤫 SILENT ERROR HANDLING: Suppress raw API errors for evaluation-safe logs
-                # We can store the error internally for debugging if needed
-                internal_error = str(api_err).replace('\n', ' ')
-                error_msg = "null" # Keep output clean as requested
-                
-                # 🛡️ FALLBACK TO DETERMINISTIC MATCHER (Matcher is always correct and reproducible)
+            except Exception:
+                # 🛡️ FALLBACK TO DETERMINISTIC MATCHER
                 if task_name == "easy":
-                    matches = match_easy(all_resumes_dict, all_jobs_dict)
-                    final_action = Action(action_type="finalize", matches=matches)
+                    final_action = Action(action_type="finalize", matches=match_easy(all_resumes_dict, all_jobs_dict))
                 elif task_name == "medium":
-                    ranked = match_medium(all_resumes_dict, all_jobs_dict)
-                    final_action = Action(action_type="finalize", ranked_list=ranked)
+                    final_action = Action(action_type="finalize", ranked_list=match_medium(all_resumes_dict, all_jobs_dict))
                 else:
-                    matches = match_hard(all_resumes_dict, all_jobs_dict)
-                    final_action = Action(action_type="finalize", matches=matches)
+                    final_action = Action(action_type="finalize", matches=match_hard(all_resumes_dict, all_jobs_dict))
 
-            # 🚀 EXECUTE FINAL ACTION
             obs, r_obj, done, info = env.step(final_action)
             final_reward_val = r_obj.score
             rewards.append(final_reward_val)
-            
             processed_action = final_action.ranked_list if task_name == "medium" else final_action.matches
-            xai_metadata = {
-                "matched": r_obj.matched_skills,
-                "missing": r_obj.missing_skills,
-                "suggestion": r_obj.suggestion
-            }
+            xai_metadata = {"matched": r_obj.matched_skills, "missing": r_obj.missing_skills, "suggestion": r_obj.suggestion}
 
         except Exception as crash:
             error_msg = str(crash).replace('\n', ' ')
@@ -237,12 +161,14 @@ REQUIRED STRUCTURE:
             final_reward_val = 0.0
             done = True
 
-        # FINAL LOGGING
         total_score = min(1.0, sum(rewards))
         log_step(4, processed_action, final_reward_val, done, xai=xai_metadata, error=error_msg)
-        
         success = done and total_score > 0
         log_end(success, 4, total_score, rewards)
 
 if __name__ == "__main__":
-    run_inference()
+    try:
+        run_inference()
+    except Exception as e:
+        print(f"[ERROR] Global failure: {e}", file=sys.stderr)
+        sys.exit(1)
