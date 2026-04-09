@@ -24,5 +24,5 @@ COPY . .
 # Clean up local environment artifacts if any
 RUN rm -rf __pycache__ .pytest_cache
 
-# Set dashboard as the entry point
-CMD ["python", "app.py"]
+# Set FastAPI as the entry point
+CMD ["uvicorn", "app.api.main:app", "--host", "0.0.0.0", "--port", "7860"]
