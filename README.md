@@ -1,5 +1,5 @@
 ---
-title: OpenEnv Resume Arena
+title: CVCraft Resume Arena
 emoji: 🌌
 colorFrom: indigo
 colorTo: blue
@@ -8,7 +8,7 @@ app_port: 7860
 pinned: false
 ---
 
-# 🏢 OpenEnv-Compliant Resume-Job Matching Environment
+# 🏢 CVCraft-Compliant Resume-Job Matching Environment
 
 A strictly OpenEnv-compliant real-world simulation environment for Job and Resume Matching, featuring advanced **Trust-Based Scaling**.
 
