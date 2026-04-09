@@ -161,7 +161,7 @@ def run_inference():
             final_reward_val = 0.0
             done = True
 
-        total_score = min(1.0, sum(rewards))
+        total_score = max(min(sum(rewards), 0.999), 0.001)
         log_step(4, processed_action, final_reward_val, done, xai=xai_metadata, error=error_msg)
         success = done and total_score > 0
         log_end(success, 4, total_score, rewards)

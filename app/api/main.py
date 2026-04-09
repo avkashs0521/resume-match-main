@@ -33,7 +33,7 @@ def step(action_data: dict):
 
     return {
         "observation": obs,
-        "reward": float(reward_value),  # FORCE float
+        "reward": max(min(float(reward_value), 0.999), 0.001),  # FORCE float strictly between 0 and 1
         "done": bool(done),
         "info": {
             **(info or {}),
