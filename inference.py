@@ -42,7 +42,7 @@ def run_inference():
 
     client = OpenAI(
         base_url=API_BASE_URL,
-        api_key=HF_TOKEN,
+        api_key=HF_TOKEN or "sk-no-token-provided",
     )
 
     tasks = ["easy", "medium", "hard"]
